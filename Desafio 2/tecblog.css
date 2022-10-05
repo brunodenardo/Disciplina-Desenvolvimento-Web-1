@@ -1,0 +1,165 @@
+p, ul, h1{
+    color: black;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+p{
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    color: #f7b610;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+body{
+    margin: 0% auto;
+    background-color: rgb(215, 215, 215);
+}
+
+header{
+    display: flex;
+    background-color: #f7b610;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+
+}
+
+#Tec{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#Blog{
+    color: white;
+    font-style: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#links{
+    display: flex;
+    color: white;
+    margin: 20px;
+    justify-content: center;
+    gap: 15px;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#links > a{
+    color: white;
+}
+
+
+.texto{
+    text-align: center;
+}
+
+/* ========================= Conteúdo da página ========================= */
+
+.grid-container{
+    display: grid;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    grid-template-columns: 45% 13%;
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px;
+    margin: 10px auto;
+    font-style: bold;
+}
+
+
+
+#grid-postagem1{
+    padding: 5px;
+    width: 100%;
+    
+    background-color: white;
+
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+#grid-postagem2{
+    background-color: white;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+
+#postagens-recentes{
+    background-color: white;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    grid-row: 1 / 2;
+}
+
+#categorias{
+    background-color: white;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+#headerCampo{
+    background-color: rgb(215, 215, 215);
+    padding: 5px;
+}
+
+#linksCategoria{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin: 0px 5px;
+}
+
+.paragrafo{
+    text-align: justify;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#textoCampos{
+    margin: 0px 5px;
+}
+
+#conteudoPostagem{
+    width: 640px;
+    margin: 10px auto;
+}
+
+#tituloPostagem{
+    color: #f7b610;
+}
+
+#data{
+    margin: 0px 0px 15px 0px;
+}
+
+#final{
+    background-color: rgb(182, 182, 182);
+    width: 58%;
+    margin: 20px auto;
+    padding: 20px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+#direitos{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
