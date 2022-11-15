@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de Dados</title>
+    <link rel="stylesheet" href="./static/styles/style.css">
+</head>
+<body style="background-image: url('./static/public/fundo2.png');">
+    <div>
+        <p>
+            <img class="logo" src="./static/public/logo.png" alt="Logo não carregado">
+            <a id="link_ultimo" href="/contato">Contato</a><span id="link">|</span>
+            <a id="link" href="/quem_somos">Quem Somos </a><span id="link">|</span>
+            <a id="link" href="/home">Home</a>
+        </p>    
+    </div>
+    <hr>
+    <div id =flex>
+        {% for linha in tabela %}
+            <div id="flexDentro">
+                <div id="flexHorizontalB">
+                    <h3>Assunto: {{linha['assunto_cont']}}</h3>
+                    <h4>Email: {{linha['email_cont']}}</h4>
+                    <h4>ID: {{linha['id_cont']}}</h4>
+                </div>
+                
+                <div id="flexHorizontalB">
+                    <p>
+                        <b>Descrição:</b><br>
+                        {{linha['mensagem_cont']}}
+                    </p>
+                </div>
+                
+            </div>
+        {% endfor %}
+
+    </div><br>
+    <div>
+        <p id="texto_centro"><b>Todos os direitos reservados</b></p>
+    </div>
+</body>
+</html>
